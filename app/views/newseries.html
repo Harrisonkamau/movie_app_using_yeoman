@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1> Series count down!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Happy weekend!
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+
+<div class="row">
+	<p>The latest release</p>
+	<table width="100%" border="1">
+		<tr ng-repeat="x in blogs">
+			<td>{{x.email}}</td>
+			<td>{{x.name}}</td>
+			<td>{{x.body}}</td>
+			
+		</tr>
+	</table>
+	
+</div>
+<!-- <p>This is the newSeries view.</p> -->
