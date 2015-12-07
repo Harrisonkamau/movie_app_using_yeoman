@@ -26,25 +26,35 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .when('/movieRelease', {
-        templateUrl: 'views/movierelease.html',
-        controller: 'releaseCtrl',
-        controllerAs: 'release'
-      })
-      .when('/newSeries', {
-        templateUrl: 'views/newseries.html',
-        controller: 'NewseriesCtrl',
-        controllerAs: 'newSeries'
-      })
-      .when('/contactList', {
-        templateUrl: 'views/contactlist.html',
-        controller: 'ContactlistCtrl',
-        controllerAs: 'contactList'
+      // .when('/movies', {
+      //   templateUrl: 'views/about.html',
+      //   controller: 'AboutCtrl',
+      //   controllerAs: 'about'
+      // })
+      // .when('/about', {
+      //   templateUrl: 'views/about.html',
+      //   controller: 'AboutCtrl',
+      //   controllerAs: 'about'
+      // })
+      // .when('/movieRelease', {
+      //   templateUrl: 'views/movierelease.html',
+      //   controller: 'releaseCtrl',
+      //   controllerAs: 'release'
+      // })
+      // .when('/newSeries', {
+      //   templateUrl: 'views/newseries.html',
+      //   controller: 'NewseriesCtrl',
+      //   controllerAs: 'newSeries'
+      // })
+      // .when('/contactList', {
+      //   templateUrl: 'views/contactlist.html',
+      //   controller: 'ContactlistCtrl',
+      //   controllerAs: 'contactList'
+      // })
+      .when('/viewMovie/:_id', {
+        templateUrl: 'views/viewmovie.html',
+        controller: 'ViewmovieCtrl',
+        controllerAs: 'viewMovie'
       })
       .otherwise({
         redirectTo: '/'

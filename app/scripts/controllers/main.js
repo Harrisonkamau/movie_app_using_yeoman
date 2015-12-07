@@ -8,10 +8,9 @@
  * Controller of the movieappApp
  */
 angular.module('movieappApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, myFactory) {
+// passes a get to your resource
+  $scope.movies = myFactory.query();
+  // 
+   
   });
