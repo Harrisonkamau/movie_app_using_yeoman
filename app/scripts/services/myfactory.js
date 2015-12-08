@@ -9,5 +9,5 @@
  */
 angular.module('movieappApp')
   .factory('myFactory', function ($resource) {
-      return $resource("http://127.0.0.1:8081/movies/:_id");
+      return $resource("http://127.0.0.1:8081/movies");
   });
