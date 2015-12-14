@@ -51,7 +51,7 @@ angular
       //   controller: 'ContactlistCtrl',
       //   controllerAs: 'contactList'
       // })
-      .when('/viewMovie/:_id', {
+      .when('/viewMovie/:id', {
         templateUrl: 'views/viewmovie.html',
         controller: 'ViewmovieCtrl',
         controllerAs: 'viewMovie'
@@ -60,6 +60,11 @@ angular
         templateUrl: 'views/addmovie.html',
         controller: 'AddmovieCtrl',
         controllerAs: 'addMovie'
+      })
+      .when('/editMovie/:id', {
+        templateUrl: 'views/editmovie.html',
+        controller: 'EditmovieCtrl',
+        controllerAs: 'editMovie'
       })
       .otherwise({
         redirectTo: '/'

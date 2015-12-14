@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="jumbotron" >
   <h1>'Allo, 'Allo!</h1>
   <p class="lead">
     <img src="images/index.jpeg" alt="I'm Yeoman"><br>
@@ -6,7 +6,12 @@
   </p>
   <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
-<h2>Movie ID: {{movie_id}}</h2>
+<h3>Movie ID: {{movie_id}}</h3>
 <h2>Title: {{moviedetails.title}}</h2>
 <h2>Year of Release: {{moviedetails.year_of_release}}</h2>
 <h2>Rating: {{moviedetails.rating}}</h2>
+<!--<button class="btn btn-primary" style="height:50px; width:200px">Edit</button>-->
+
+<a class="btn btn-primary" style="height:50px; width:200px" ng-href="#/editMovie/{{moviedetails._id}}">Update Movie</a>
+
+
