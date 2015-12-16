@@ -66,6 +66,11 @@ angular
         controller: 'EditmovieCtrl',
         controllerAs: 'editMovie'
       })
+      .when('/loginPage', {
+        templateUrl: 'views/loginpage.html',
+        controller: 'LoginpageCtrl',
+        controllerAs: 'loginPage'
+      })
       .otherwise({
         redirectTo: '/'
       });
